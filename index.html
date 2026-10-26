@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MountainV — Deutsches FiveM Roleplay · ESX Legacy</title>
+  <meta name="description" content="MountainV — Deutscher FiveM-Roleplay-Server auf Basis von ESX Legacy mit eigenen Systemen, Custom Content und einem aktiven Team." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- NAV -->
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#top" class="brand">
+        <span class="brand__mark" aria-hidden="true">
+          <svg viewBox="0 0 32 32" width="26" height="26"><path d="M4 26 13 9l5 9 3-5 7 13z" fill="currentColor"/><path d="M13 9l2.3 4.2-2 3.6L11 13z" fill="#0a0e12" opacity=".35"/></svg>
+        </span>
+        <span class="brand__text">Mountain<span>V</span></span>
+      </a>
+      <nav class="nav__links" id="navLinks">
+        <a href="#about">Überblick</a>
+        <a href="#stack">Stack</a>
+        <a href="#jobs">Jobs</a>
+        <a href="#scripts">Scripts</a>
+        <a href="#content">Content</a>
+        <a href="#economy">Wirtschaft</a>
+        <a href="#bot">Discord-Bot</a>
+        <a href="#data">Datenbank</a>
+      </nav>
+      <button class="nav__toggle" id="navToggle" aria-label="Menü">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="nav__progress" id="navProgress" aria-hidden="true"></div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="top">
+    <div class="hero__glow" aria-hidden="true"></div>
+    <div class="hero__ridge" aria-hidden="true" data-parallax="0.35">
+      <svg viewBox="0 0 1440 320" preserveAspectRatio="none">
+        <path d="M0 320 L0 200 L240 90 L420 170 L620 60 L820 180 L1040 70 L1230 160 L1440 90 L1440 320 Z" fill="url(#g1)"/>
+      </svg>
+    </div>
+    <div class="hero__ridge hero__ridge--back" aria-hidden="true" data-parallax="0.6">
+      <svg viewBox="0 0 1440 320" preserveAspectRatio="none">
+        <path d="M0 320 L0 250 L300 160 L520 220 L760 130 L980 215 L1200 150 L1440 220 L1440 320 Z" fill="url(#g2)"/>
+      </svg>
+    </div>
+    <svg width="0" height="0" aria-hidden="true"><defs>
+      <linearGradient id="g1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1c3b44"/><stop offset="1" stop-color="#06080a"/></linearGradient>
+      <linearGradient id="g2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#215a56"/><stop offset="1" stop-color="#06080a"/></linearGradient>
+    </defs></svg>
+    <div class="hero__inner" data-hero>
+      <p class="eyebrow">Deutsches FiveM Roleplay</p>
+      <h1 class="hero__title">Mountain<span>V</span></h1>
+      <p class="hero__sub">Eine ganze Stadt, von Grund auf gebaut. Eigene Systeme, Custom Maps und Fahrzeuge auf ESX Legacy — betrieben von einem Team, das jedes Detail selbst in der Hand hat.</p>
+      <div class="hero__cta">
+        <a href="#about" class="btn btn--primary">Projekt entdecken</a>
+        <a href="#scripts" class="btn btn--ghost">Eigene Systeme ansehen</a>
+      </div>
+    </div>
+    <a href="#about" class="hero__scroll" aria-label="Nach unten scrollen">
+      <span></span>
+    </a>
+  </section>
+
+  <!-- STATS -->
+  <section class="stats" aria-label="Kennzahlen">
+    <div class="stats__grid">
+      <div class="stat"><span class="stat__num" data-count="14">14</span><span class="stat__label">Jobs</span></div>
+      <div class="stat"><span class="stat__num" data-count="48" data-suffix="+">48+</span><span class="stat__label">Scripts</span></div>
+      <div class="stat"><span class="stat__num" data-count="23">23</span><span class="stat__label">MLOs</span></div>
+      <div class="stat"><span class="stat__num" data-count="36" data-suffix="+">36+</span><span class="stat__label">Fahrzeuge</span></div>
+      <div class="stat"><span class="stat__num" data-count="9">9</span><span class="stat__label">Waffen</span></div>
+      <div class="stat"><span class="stat__num" data-count="8">8</span><span class="stat__label">Kleidung</span></div>
+    </div>
+  </section>
+
+  <main>
+    <!-- ABOUT -->
+    <section class="section" id="about">
+      <div class="section__head">
+        <h2>Was ist MountainV?</h2>
+        <p class="section__kicker">Ein Ort, der sich wie eine echte Stadt anfühlt</p>
+      </div>
+      <div class="prose">
+        <p>MountainV ist ein deutscher Roleplay-Server für FiveM. Statt fertige Scripts zusammenzustecken, bauen wir die Welt selbst: ausgespielte Fraktionen, lebendige Viertel, ein Wirtschaftskreislauf, der Entscheidungen Gewicht gibt. Jeder Job, jedes Fahrzeug und jedes Gebäude ist da, weil es eine Geschichte möglich macht — nicht, weil es im Standardpaket lag.</p>
+        <p>Unter der Haube läuft <strong>ESX Legacy</strong> auf <strong>GameBuild 3258</strong> (inkl. Cayo Perico), verwaltet über <strong>txAdmin</strong> mit einer <strong>MariaDB</strong>-Datenbank. Technik, die stabil im Hintergrund arbeitet, damit vorne das Rollenspiel zählt.</p>
+        <p>Dazu kommt unser eigener Discord-Bot, der <strong>RouteFrameworkBot</strong>: Er stellt Ausweise, Führerscheine und Reisepässe als echte Dokumente aus, hält die Team-Verwaltung zusammen und verbindet den Server direkt mit ERLC.</p>
+      </div>
+    </section>
+
+    <!-- STACK -->
+    <section class="section" id="stack">
+      <div class="section__head">
+        <h2>Technischer Stack</h2>
+        <p class="section__kicker">Frameworks, Bibliotheken und Infrastruktur</p>
+      </div>
+      <ul class="chips">
+        <li>ESX Legacy</li><li>ox_lib</li><li>ox_inventory</li><li>ox_target</li>
+        <li>ox_doorlock</li><li>oxmysql</li><li>pma-voice</li><li>lb-phone</li>
+        <li>esx_multicharacter</li><li>esx_identity</li><li>esx_skin / skinchanger</li>
+        <li>MariaDB 11.8</li><li>txAdmin</li><li>GameBuild 3258</li><li>Node.js / Discord.js</li>
+      </ul>
+    </section>
+
+    <!-- JOBS -->
+    <section class="section" id="jobs">
+      <div class="section__head">
+        <h2>Jobs &amp; Fraktionen</h2>
+        <p class="section__kicker">Alle verfügbaren Berufe im Roleplay</p>
+      </div>
+      <div class="jobgrid">
+        <div class="job"><span class="job__icon">🚨</span><span class="job__name">LSPD</span><span class="job__role">Law Enforcement</span></div>
+        <div class="job"><span class="job__icon">🚑</span><span class="job__name">EMS / Ambulance</span><span class="job__role">Rettungsdienst</span></div>
+        <div class="job"><span class="job__icon">🔧</span><span class="job__name">Mechanic</span><span class="job__role">Werkstatt</span></div>
+        <div class="job"><span class="job__icon">🚗</span><span class="job__name">Cardealer</span><span class="job__role">Autohaus</span></div>
+        <div class="job"><span class="job__icon">🏦</span><span class="job__name">Banker</span><span class="job__role">Finanzwesen</span></div>
+        <div class="job"><span class="job__icon">🚕</span><span class="job__name">Taxi</span><span class="job__role">Transport</span></div>
+        <div class="job"><span class="job__icon">🎣</span><span class="job__name">Fisherman</span><span class="job__role">Zivilist</span></div>
+        <div class="job"><span class="job__icon">⛏️</span><span class="job__name">Miner</span><span class="job__role">Zivilist</span></div>
+        <div class="job"><span class="job__icon">🪵</span><span class="job__name">Lumberjack</span><span class="job__role">Zivilist</span></div>
+        <div class="job"><span class="job__icon">📰</span><span class="job__name">Reporter</span><span class="job__role">Presse</span></div>
+        <div class="job"><span class="job__icon">⛽</span><span class="job__name">Fueler</span><span class="job__role">Zivilist</span></div>
+        <div class="job"><span class="job__icon">🍖</span><span class="job__name">Butcher</span><span class="job__role">Zivilist</span></div>
+        <div class="job"><span class="job__icon">🧵</span><span class="job__name">Tailor</span><span class="job__role">Zivilist</span></div>
+        <div class="job"><span class="job__icon">👤</span><span class="job__name">Unemployed</span><span class="job__role">Arbeitslos</span></div>
+      </div>
+    </section>
+
+    <!-- SCRIPTS -->
+    <section class="section" id="scripts">
+      <div class="section__head">
+        <h2>Eigene Systeme &amp; Scripts</h2>
+        <p class="section__kicker">Custom-entwickelte Ressourcen mit dem Prefix <code>mv_</code> und Route</p>
+      </div>
+      <div class="cols">
+        <div class="card">
+          <h3>MountainV Custom Scripts <span class="badge">12</span></h3>
+          <ul class="list">
+            <li>mv_autohaus</li><li>mv_shops</li><li>mv_waffenladen</li><li>mv_bankraub</li>
+            <li>mv_fishing</li><li>mv_adminjail</li><li>mv_blacklistveh</li><li>mv_frak_badge</li>
+            <li>mv_kleidungsrad</li><li>mv_xmenu</li><li>music_arrow</li><li>CreatorScript</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Route Framework <span class="badge">4</span></h3>
+          <ul class="list">
+            <li>RouteHud</li><li>RouteLoadingScreen</li><li>RouteNoNPC</li><li>RouteTime</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Einreise-System <span class="badge">4</span></h3>
+          <ul class="list">
+            <li>einreise-tablet</li><li>einreise_geschenk</li><li>einreise_ping</li><li>einreisefahrzeug</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Fraktions-Systeme <span class="badge">10+</span></h3>
+          <ul class="list">
+            <li>lspd_system</li><li>lspd_waffen</li><li>lspd_waffenstand</li><li>lspd_ffa</li>
+            <li>lamaAdmin</li><li>lamaPoliceButtons</li><li>firescript</li><li>amr-system</li>
+            <li>sepuraradio</li><li>jobscreator</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Garagen-System</h3>
+          <p class="card__sub">Fraktions- und Spieler-Garagen</p>
+          <ul class="list">
+            <li>lspd_garage</li><li>lspd_garage2</li><li>lsfd_garage</li><li>lsmd_garage</li>
+            <li>ice_garage</li><li>lavera_garage</li><li>casino_garage</li><li>op-garages</li>
+            <li>GarangeScript</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Gameplay-Features</h3>
+          <p class="card__sub">Mechaniken, die das Spielerlebnis ausmachen</p>
+          <ul class="list list--wrap">
+            <li>lb-phone</li><li>pma-voice</li><li>CarCrash</li><li>CarryPeople</li>
+            <li>car-lock</li><li>cd_holsteranimation</li><li>colored_map</li><li>disablecombatroll</li>
+            <li>lux_vehcontrol</li><li>rpemotes-master</li><li>rockstar-editor</li><li>wk_wars2x</li>
+            <li>casino_teleporter</li><li>VinewoodSign</li><li>FivemSafeSystem</li><li>origen_chat</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTENT -->
+    <section class="section" id="content">
+      <div class="section__head">
+        <h2>Custom Content</h2>
+        <p class="section__kicker">Alles, was die Stadt eigen macht — selbst gebaut statt von der Stange</p>
+      </div>
+      <div class="cols">
+        <div class="card card--feature">
+          <h3>Maps &amp; MLOs</h3>
+          <p class="card__sub">23 begehbare Innenräume und Umbauten — vom Revier bis zum Apartment. Jeder Ort, an dem etwas passiert, ist auch wirklich betretbar.</p>
+          <span class="pill">Alle MLOs anzeigen (23)</span>
+        </div>
+        <div class="card card--feature">
+          <h3>Fahrzeuge</h3>
+          <p class="card__sub">Über 36 Einsatz- und Zivilfahrzeuge mit eigenem Handling — vom Streifenwagen bis zum privaten Alltagsauto.</p>
+          <span class="pill">Fahrzeug-Packs anzeigen</span>
+        </div>
+        <div class="card">
+          <h3>Waffen</h3>
+          <p class="card__sub">Bewaffnung mit Augenmaß: abgestimmt auf die Fraktionen, damit Konflikte Spannung erzeugen statt Chaos.</p>
+          <ul class="list list--wrap">
+            <li>Glock 17</li><li>Glock 18C</li><li>Pistol</li><li>SMG</li><li>SIG 516</li>
+            <li>Pumpshotgun Mk2</li><li>Tazer</li><li>Beanbag</li><li>Schlagstock</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Kleidung</h3>
+          <p class="card__sub">Eigene Uniformen und Zivil-Outfits, an denen man Rolle und Fraktion auf den ersten Blick erkennt.</p>
+          <ul class="list list--wrap">
+            <li>mv_koja_lspd_v2</li><li>mv_fib</li><li>mv_CTU_CeleronVisuals</li><li>mv_ice</li>
+            <li>mv_fraktionspack_m2</li><li>mv_oblock_pack_syroo</li><li>EngelbertStraussHose</li><li>x1magaeup</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ECONOMY -->
+    <section class="section" id="economy">
+      <div class="section__head">
+        <h2>Wirtschaftssystem</h2>
+        <p class="section__kicker">Konten, Items und Lizenzen</p>
+      </div>
+      <div class="cols">
+        <div class="card">
+          <h3>Konten</h3>
+          <ul class="list">
+            <li>Bank / Savings</li><li>Society: Police</li><li>Society: EMS</li><li>Society: Mechanic</li>
+            <li>Society: Cardealer</li><li>Society: Taxi</li><li>Society: Bank</li><li>Kaution</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Lizenzen</h3>
+          <ul class="list">
+            <li>Driving Permit (DMV)</li><li>Drivers License</li><li>Motorcycle License</li>
+            <li>Commercial Drivers License</li><li>Boat License</li><li>Weed Processing License</li>
+          </ul>
+          <span class="pill">Alle Items anzeigen (33)</span>
+        </div>
+        <div class="card card--accent">
+          <h3>Bußgeld- &amp; Strafenkatalog</h3>
+          <p class="card__sub">50 Straftatbestände in 4 Kategorien</p>
+          <span class="pill">Katalog anzeigen</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- BOT -->
+    <section class="section" id="bot">
+      <div class="section__head">
+        <h2>RouteFramework Discord-Bot</h2>
+        <p class="section__kicker">Eigenständiger Bot für Serververwaltung und RP-Dokumente</p>
+      </div>
+      <div class="prose">
+        <p>Der <strong>RouteFrameworkBot</strong> ist ein Node.js-Bot auf Basis von <strong>Discord.js v14</strong> mit integriertem Webserver (Express). Er bietet folgende Slash-Commands:</p>
+      </div>
+      <div class="cmdgrid">
+        <div class="cmd"><code>/ausweis</code><span>Personalausweis erstellen</span></div>
+        <div class="cmd"><code>/fuehrerschein</code><span>Führerschein generieren</span></div>
+        <div class="cmd"><code>/reisepass</code><span>Reisepass ausstellen</span></div>
+        <div class="cmd"><code>/erlc</code><span>ERLC-Integration</span></div>
+        <div class="cmd"><code>/server</code><span>Server-Status &amp; Info</span></div>
+        <div class="cmd"><code>/team</code><span>Team-Verwaltung</span></div>
+      </div>
+      <p class="note">Zusätzlich: Schicht-Tracking (shifts), Verwarnungs-System (warns), Notizen (notes) und ein JSON-basiertes Datenbank-System.</p>
+    </section>
+
+    <!-- DATA -->
+    <section class="section" id="data">
+      <div class="section__head">
+        <h2>Datenbank-Struktur</h2>
+        <p class="section__kicker">MariaDB mit ESX Legacy Schema</p>
+      </div>
+      <ul class="chips chips--mono">
+        <li>users</li><li>owned_vehicles</li><li>jobs / job_grades</li><li>items</li>
+        <li>vehicles</li><li>addon_account</li><li>addon_inventory</li><li>banking</li>
+        <li>billing</li><li>datastore</li><li>fine_types</li><li>licenses</li>
+        <li>multicharacter_slots</li><li>properties</li><li>society_moneywash</li>
+        <li>whitelist</li><li>vehicle_categories</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__inner">
+      <span class="brand brand--footer">
+        <span class="brand__mark" aria-hidden="true">
+          <svg viewBox="0 0 32 32" width="22" height="22"><path d="M4 26 13 9l5 9 3-5 7 13z" fill="currentColor"/></svg>
+        </span>
+        <span class="brand__text">Mountain<span>V</span></span>
+      </span>
+      <p>MountainV Roleplay — Dokumentation generiert am 26.10.2026</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
